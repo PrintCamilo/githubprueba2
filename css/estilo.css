@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+.caja {
+  background-color: aqua;
+  border: yellow solid 2px;
+}
+
+.contenedor {
+  background-color: white;
+  width: 90%;
+  height: 80vh;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: repeat(3, 1fr); */
+  gap: 10px;
+
+  grid-template-areas:
+    "abc abc abc"
+    "d e f"
+    "ghi ghi ghi";
+}
+
+.abc {
+  grid-area: abc;
+  background-color: rgb(9, 24, 243);
+}
+/* .c {
+  grid-area: c;
+  background-color: white;
+} */
+.d {
+  grid-area: d;
+  background-color: rgb(143, 243, 77);
+}
+.e {
+  grid-area: e;
+  background-color: rgb(226, 226, 221);
+}
+.f {
+  grid-area: f;
+  background-color: rgb(236, 15, 15);
+}
+.ghi {
+  grid-area: ghi;
+  background-color: rgb(14, 236, 51);
+}
